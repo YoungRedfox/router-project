@@ -26,6 +26,5 @@ export default {
 <style lang="scss">
     .descriptionContent{
         padding: 10px;
-        background-color: burlywood;
     }
 </style>

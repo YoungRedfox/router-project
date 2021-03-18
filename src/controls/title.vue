@@ -1,6 +1,6 @@
 <template>
     <div class="titleContent">
-        <paragraf-default className="type-1" :value="title"></paragraf-default>
+        <paragraf-default className="type-5" :value="title"></paragraf-default>
     </div>
 </template>
 <script>
@@ -18,7 +18,5 @@ export default {
 <style lang="scss">
     .titleContent{
         padding: 10px;
-        background-color: rgb(168, 135, 222);
-        text-align: center;
     }
 </style>

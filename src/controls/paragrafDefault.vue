@@ -1,6 +1,6 @@
 <template>
     <div class="wrapParagraf">
-        <p :class="className">{{value}}
+        <p :class="className">{{typeValue}}
             <slot></slot>
         </p>
     </div>
@@ -17,8 +17,21 @@ export default {
         value: {
             type: String,
             default: "",
+        },
+        valueNumber: {
+            type: Number,
+            default: 0,
         }
     },
+    computed: {
+        typeValue(){
+            if(this.value === ""){
+                return this.valueNumber
+            } else {
+                return this.value
+            }
+        }
+    }
 }
 </script>
 
@@ -52,6 +65,26 @@ export default {
            font-weight: 400;     
            letter-spacing: .0125em;     
            line-height: 2rem;     
+           word-break: break-all;
+        }
+        .type-4{
+           align-items: center;     
+           display: flex;     
+           flex-wrap: wrap;     
+           font-size: 0.6rem;     
+           font-weight: 500;     
+           letter-spacing: .0125em;     
+           line-height: 1rem;     
+           word-break: break-all;
+        }
+        .type-5{
+           align-items: center;     
+           display: flex;     
+           flex-wrap: wrap;     
+           font-size: 1.05rem;     
+           font-weight: 600;     
+           letter-spacing: .0125em;     
+           line-height: 1rem;     
            word-break: break-all;
         }
     }

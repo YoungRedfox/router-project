@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <button @click="onClick" :type="typeButton" class="btn" :class="className">
         <span v-if="iconName !== ''">
             <i :class="iconName"></i>
         </span>
-        <button :type="typeButton" class="btn" :class="className">
-            <span class="buttonValue">{{valueButton}}</span>
-        </button>
-    </div>
+        <span v-if="valueButton !== ''" class="buttonValue">
+            {{valueButton}}
+        </span>
+    </button>
 </template>
 <script>
 export default {
@@ -20,14 +20,17 @@ export default {
         className: String,
         valueButton: {
             type: String,
-            require: true,
+        }
+    },
+    methods: {
+        onClick(obj){
+            this.$emit('click', obj)
         }
     }
 }
 </script>
 <style lang="scss">
     .btn{
-        padding: 10px 0px;
-        background: chartreuse;
+        padding: 10px 10px;
     }
 </style>

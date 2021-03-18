@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <NavMain /> 
-    <router-view/>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, cupiditate.</p>
+    <div class="section">
+      <router-view/>
+    </div>
     <FooterMain />
   </div>
 </template>
@@ -21,8 +22,11 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #000000;
+  height: 100%;
+  .section {
+    min-height: 100VW;
+  }
 }
 
 body {

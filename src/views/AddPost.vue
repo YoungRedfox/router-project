@@ -1,14 +1,14 @@
 <template>
-    <div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat et dolore eveniet qui modi eius nesciunt. Nihil aperiam vitae quibusdam.</p>
-    </div>
+  <div class="postsDisplay">
+      <AddNewPost />
+  </div>
 </template>
-
 <script>
+import AddNewPost from "../components/addNewPosts/addNewPost";
 export default {
     name: 'AddPost',
     components: {
-        
+        AddNewPost,
     }
 }
 </script>

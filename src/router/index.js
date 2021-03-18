@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import AddPost from '../views/AddPost.vue'
+// import AddPost from '../views/AddPost.vue'
 import Page404 from '@/components/404/page404.vue'
 
 Vue.use(VueRouter)
@@ -23,7 +23,7 @@ const routes = [
   {
     path: '/addpost',
     name: 'AddPost',
-    component: AddPost
+    component: () => import(/* webpackChunkName: "about" */ '../views/AddPost.vue')
   },
   {
     path: '/*',

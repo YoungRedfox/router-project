@@ -5,223 +5,224 @@
       "title": "json-server",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 34,
+      "reactionMinus": 30,
       "author": "typicode"
     },
     {
-     
       "id": 2,
       "title": "reprehenderit est deserunt velit ipsam",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 7,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 3,
       "title": "officia porro iure quia iusto qui ipsa ut modi",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 5,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 4,
       "title": "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 6,
+      "reactionMinus": 9,
       "author": "typicode"
     },
     {
-     
       "id": 5,
       "title": "natus nisi omnis corporis facere molestiae rerum in",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 6,
       "title": "accusamus ea aliquid et amet sequi nemo",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode2"
     },
     {
-     
       "id": 7,
       "title": "officia delectus consequatur vero aut veniam explicabo molestias",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode2"
     },
     {
-     
       "id": 8,
       "title": "aut porro officiis laborum odit ea laudantium corporis",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode2"
     },
     {
-     
       "id": 9,
       "title": "qui eius qui autem sed",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode2"
     },
     {
-     
       "id": 10,
       "title": "beatae et provident et ut vel",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode2"
     },
     {
-     
       "id": 11,
       "title": "nihil at amet non hic quia qui",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode3"
     },
     {
-     
       "id": 12,
       "title": "mollitia soluta ut rerum eos aliquam consequatur perspiciatis maiores",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode3"
     },
     {
-     
       "id": 13,
       "title": "repudiandae iusto deleniti rerum",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode3"
     },
     {
-     
       "id": 14,
       "title": "est necessitatibus architecto ut laborum",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode3"
     },
     {
-     
       "id": 15,
       "title": "harum dicta similique quis dolore earum ex qui",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode3"
     },
     {
-     
       "id": 16,
       "title": "iusto sunt nobis quasi veritatis quas expedita voluptatum deserunt",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 17,
       "title": "natus doloribus necessitatibus ipsa",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 18,
       "title": "laboriosam odit nam necessitatibus et illum dolores reiciendis",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode34"
     },
     {
-     
       "id": 19,
       "title": "perferendis nesciunt eveniet et optio a",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 20,
       "title": "assumenda voluptatem laboriosam enim consequatur veniam placeat reiciendis error",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode"
     },
     {
-     
       "id": 21,
       "title": "ad et natus qui",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode4"
     },
     {
-     
       "id": 22,
       "title": "et ea illo et sit voluptas animi blanditiis porro",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode5"
     },
     {
-     
       "id": 23,
       "title": "harum velit vero totam",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode5"
     },
     {
-     
       "id": 24,
       "title": "beatae officiis ut aut",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": false,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode7"
     },
     {
-     
       "id": 25,
       "title": "facere non quis fuga fugit vitae",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reaction": true,
+      "reactionPlus": 0,
+      "reactionMinus": 0,
       "author": "typicode534"
     }
   ],
