@@ -20,12 +20,11 @@ export default {
         },
         valueNumber: {
             type: Number,
-            default: 0,
         }
     },
     computed: {
         typeValue(){
-            if(this.value === ""){
+            if(this.value === "" && this.valueNumber !== undefined){
                 return this.valueNumber
             } else {
                 return this.value

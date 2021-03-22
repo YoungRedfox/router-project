@@ -16,7 +16,10 @@
                 <div class="onePostReaction">
                     <div><ValueReactionPost :valueReaction="post.reactionMinus" iconCode="fas fa-minus" /></div>
                     <div><ButtonIcon @click="addMinusReaction(post)" className="btnIcon-1" typeButton="button" icon="far fa-minus-square" /></div>
-                </div>                
+                </div>     
+                <div class="buttonEdit">
+                    <ButtonDefault @click="editPost(post.id)" className="editBtn" valueButton="Edytuj"/>    
+                </div>           
             </div>
         </div>
     </div>
@@ -31,8 +34,7 @@ import TitlePost from "../../controls/title";
 import DescriptionPost from "../../controls/description";
 import ValueReactionPost from "../../controls/reaction";
 import postUpdata from "../../service/put.service";
-// import ButtonDefault from "../../controls/buttons/buttonDefault";
-// import ButtonPrimary from "../../controls/buttons/buttonPrimary";
+import ButtonDefault from "../../controls/buttons/buttonDefault";
 import ButtonIcon from "../../controls/buttons/buttonIcon";
 export default {
     name: "displayPosts",
@@ -41,8 +43,7 @@ export default {
         TitlePost,
         DescriptionPost,
         ValueReactionPost,
-        // ButtonDefault,
-        // ButtonPrimary,
+        ButtonDefault,
         ButtonIcon,
     },
     data(){
@@ -84,6 +85,11 @@ export default {
             // this.disabledButton = true
             postUpdata.putPost(post)
             console.log(post.reactionMinus);
+        },
+        editPost(id){
+            this.$router.push(`post/${id}`)
+            window.scrollTo(0, 0);
+            console.log(this.$router)
         }
     }
 }

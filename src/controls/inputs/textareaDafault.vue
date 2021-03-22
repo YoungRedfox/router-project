@@ -1,8 +1,14 @@
 <template>
     <div>
         <label :for="nameTextarea" class="labelTextarea" :class="classNameLabel">{{valueLabel}}</label>
-        <textarea class="textarea" :class="className" :v-model="valueTextarea" :id="idTextarea" :name="nameTextarea" :placeholder="placeholderTextarea">
-        
+        <textarea 
+        class="textarea" 
+        :class="className" 
+        v-model="valueTextarea" 
+        :id="idTextarea" 
+        :name="nameTextarea" 
+        :placeholder="placeholderTextarea"
+        @change="changeValue(valueTextarea)">
         </textarea>
     </div>
 </template>
@@ -17,6 +23,12 @@ export default {
         className: String,
         classNameLabel: String,
         valueTextarea: String,
+    },
+    methods: {
+        changeValue(value){
+             this.$emit('change', value)
+             console.log(value)
+        }
     }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
     <div class="descriptionContent">
         <paragraf-default className="type-2" :value="podtytul">
-            <paragraf-default className="type-3" :value="description"></paragraf-default>
+            <paragraf-default className="type-3" :value="tytul"></paragraf-default>
         </paragraf-default>
     </div>
 </template>
@@ -17,8 +17,17 @@ export default {
     },
     computed: {
         podtytul(){
+            if(this.description === "") {
+                return "Brak opisu"
+            }
             const desTwoWord = this.description.split(' ')
             return `${desTwoWord[0]} ${desTwoWord[1]} ...`
+        },
+        tytul(){
+            if(this.description === "") {
+                return ""
+            }
+            return this.description
         }
     }
 }

@@ -224,6 +224,24 @@
       "reactionPlus": 0,
       "reactionMinus": 0,
       "author": "typicode534"
+    },
+    {
+      "title": "Nowy",
+      "urlImg": "https://via.placeholder.com/600/92c952",
+      "description": "Nowy Post 1234",
+      "reactionPlus": 0,
+      "reactionMinus": 0,
+      "author": "tipycode",
+      "id": 26
+    },
+    {
+      "title": "Nowy 12",
+      "urlImg": "https://via.placeholder.com/600/92c952",
+      "description": "lalal laalal ",
+      "reactionPlus": 0,
+      "reactionMinus": 0,
+      "author": "tipycode",
+      "id": 27
     }
   ],
   "comments": [

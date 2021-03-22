@@ -42,7 +42,7 @@ export default {
         },
         async getData(){
           let posts = await getData.getPosts();
-          this.allPosts = posts.data;
+          this.allPosts = posts.data.reverse();
           this.fivePost = this.allPosts.filter((item, index) => {
             if(index < 5) {
               return item;

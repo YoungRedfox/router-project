@@ -2,6 +2,7 @@
     <div class="containerAddPost">
         <div class="col-1">
             <div class="formAddNewPost">
+                
                 <div v-for="item in inputs" :key="item.idInput">
                     <DefaultInput 
                         :valueLabel="item.valueLabel"
@@ -10,16 +11,20 @@
                         :valueInput="newPost[item.nameInput]"
                         :className="item.className"
                         :classNameLabel="item.classNameLabel"
+                        @change="changeValueInput($event, item.nameInput)"
+                        @keyup="keyUp($event.length, item.idInput)"
                     />
+                    
                 </div>
                 <DefaultTextarea 
                         valueLabel="Opis"
                         idTextarea="descriptionPost"
                         nameTextarea="description"
-                        placeholderTextarea="Opis 255 znaków"
+                        placeholderTextarea="Opis 75 znaków"
                         className="textareaPost"
                         classNameLabel="textareaDescriptionLabel"
-                        :valueTextarea="this.newPost.description"
+                        :valueTextarea="newPost.description"
+                        @change="changeValueTextarea($event)"
                     />
                 <DefaultButton @click="addPost(newPost)" className="addPost" valueButton="Dodaj"/>
             </div>
@@ -44,6 +49,7 @@ import DefaultButton from '../../controls/buttons/buttonDefault'
 import FotoPost from "../../controls/foto";
 import TitlePost from "../../controls/title";
 import DescriptionPost from "../../controls/description";
+import postNew from "../../service/post.service";
 export default {
     name: 'AddNewPost',
     components: {
@@ -59,10 +65,12 @@ export default {
             newPost: {
                 title: "Z palca",
                 urlImg: "https://via.placeholder.com/600/92c952",
-                description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
+                description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto labore quia fuga enim illo hic porro nobis at quae? Quaerat dolorem ullam repudiandae, dolorum at dolore! Distinctio nisi quam ducimus aliquam nam voluptates incidunt quia! Expedita, sit! Harum, numquam. Deleniti nesciunt ut earum quia voluptas consectetur, quis distinctio autem explicabo debitis, omnis molestias ex soluta, corrupti aperiam expedita rerum dolor. Alias hic placeat incidunt accusantium voluptate fugit, quo amet quisquam, voluptatum explicabo possimus laudantium?",
                 reactionPlus: 0,
                 reactionMinus: 0,
-                author: "tipycode"               
+                author: "tipycode",
+                validation: false  
+                           
             },
             inputs: [
                 {
@@ -89,13 +97,23 @@ export default {
                     classNameLabel: "labelAuthorPost",
                     valueInput: "this.newPost.author"
                 },
-            ]
+            ],
+            showEvent: false,
+            errors: ''
         }
     },
     methods: {
         addPost(post){
-            console.log(post)
-        }
+            postNew.postNewPost(post)
+            this.$router.push("/posts")
+        },
+        changeValueInput(event, i){
+            this.newPost[i] = event 
+        },
+        changeValueTextarea(event){
+            this.newPost.description = event 
+        },
+        
     }
 }
 </script>
