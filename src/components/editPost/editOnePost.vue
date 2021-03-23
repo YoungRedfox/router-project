@@ -10,7 +10,7 @@
             classNameLabel="labelTitlePost"
             @change="changeValue($event, 'title')"
         />
-        <DefaultInput 
+        <!-- <DefaultInput 
             valueLabel="URL Zdjęcia:"
             idInput="urlImgPost"
             nameInput="urlImg"
@@ -27,10 +27,11 @@
             className="inputAuthorPost"
             classNameLabel="labelAuthorPost"
             
-        />
+        /> -->
     </div>
 </template>
 <script>
+import getData from "../../service/get.service";
 import DefaultInput from '../../controls/inputs/inputDefault'
 // import DefaultTextarea from '../../controls/inputs/textareaDafault'
 // import DefaultButton from '../../controls/buttons/buttonDefault'
@@ -41,7 +42,8 @@ export default {
     name: 'EditOnePost',
     data(){
         return {
-            onePost: this.post
+            idPost: this.$router.currentRoute.params.id,
+            post: {}
         }
     },
     components: {
@@ -53,16 +55,23 @@ export default {
         // DescriptionPost
     }, 
     props: {
-        post: {
-            type: Object,
-            default: () => {},
-        }
+      
+    },
+    created(){
+        this.start();
     },
       methods: {
         changeValue(value, name){
-            this.onePost[name] = value
-            console.log(this.onePost)
+            this.post[name] = value
+            console.log(value)
         },
+        start(){
+          this.getData();
+        },
+        async getData(){
+            let post = await getData.getOnePost(this.idPost);
+            this.post = post.data
+        }
     }
 }
 </script>

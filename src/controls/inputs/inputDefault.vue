@@ -1,15 +1,16 @@
 <template>
     <span>
         <label :for="nameInput" class="labelImput" :class="classNameLabel">{{valueLabel}}</label>
+        {{this.xd}}
         <input 
         :type="typeInput" 
         class="input" 
         :class="className" 
-        v-model="valueInput" 
+        v-model="value" 
         :id="idInput" 
         :name="nameInput"
         :placeholder="placeholderInput" 
-        @change="changeValue(valueInput)"
+        @change="changeValue(xd)"
         @focusin="focusInput"
         @focusout="onfocusInput(valueInput)"
         @keyup="keyUp(valueInput)"
@@ -22,7 +23,9 @@ export default {
     name: "DefaultInput",
     data(){
         return {
-            flagIdValited: true
+            flagIdValited: true,
+            cos: this.valueInput,
+            value: "",
         }
     },
     computed: {
@@ -30,7 +33,6 @@ export default {
             if(!this.flagIdValited){
             switch(this.nameInput){
                 case 'title':
-                    console.log(this.valueInput)
                     return {isQuiteLong: this.valueInput.length < 5, massage: "Za mała ilość znaków w tytule"}
                 
                 case 'urlImg':
@@ -44,6 +46,15 @@ export default {
             }
             }
             return false
+        },
+        xd() {
+            return this.valueInput
+        }
+    },
+    watch: {
+        valueInput: function(newValue, oldValue){
+            // value = this.valueInput
+            console.log(newValue, oldValue)
         }
     },
     props: {
@@ -62,8 +73,11 @@ export default {
     },
     methods: {
         changeValue(value){
-             this.$emit('change', value)
-            //  console.log(value)
+            let pomoc = this.valueInput
+
+            console.log(pomoc)
+             this.$emit('change', value) 
+              console.log(value)
         },
         focusInput(){
             this.$emit('focus')
