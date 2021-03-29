@@ -1,21 +1,30 @@
 <template>
-  <div id="app">
-    <NavMain /> 
-    <div class="section">
-      <router-view/>
+  <v-app>
+    <div id="app">
+      <NavMain /> 
+      <div class="section">
+        <router-view/>
+      </div>
+      <FooterMain />
     </div>
-    <FooterMain />
-  </div>
+  </v-app>
 </template>
+
 <script>
 import NavMain from "./components/nav/nav";
 import FooterMain from "./components/nav/footer";
 export default {
+  name: 'App',
+
   components: {
     NavMain,
     FooterMain,
-  }
-}
+  },
+
+  data: () => ({
+    //
+  }),
+};
 </script>
 <style lang="scss">
 #app {
@@ -28,10 +37,8 @@ export default {
     min-height: 100VW;
   }
 }
-
 body {
   padding: 0px;
   margin: 0px;
 }
-
 </style>

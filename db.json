@@ -2,12 +2,12 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "urlImg": "",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
+      "title": "json-serversdfsd",
+      "urlImg": "https://via.placeholder.com/600/92c952",
+      "description": "Lorem <i>ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.</i>",
       "reactionPlus": 34,
       "reactionMinus": 30,
-      "author": "typicode"
+      "author": "typicodesdfdf"
     },
     {
       "id": 2,
@@ -212,8 +212,8 @@
       "title": "beatae officiis ut aut",
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
-      "reactionPlus": 0,
-      "reactionMinus": 0,
+      "reactionPlus": 10,
+      "reactionMinus": 1,
       "author": "typicode7"
     },
     {
@@ -222,15 +222,15 @@
       "urlImg": "",
       "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
       "reactionPlus": 0,
-      "reactionMinus": 0,
+      "reactionMinus": 1,
       "author": "typicode534"
     },
     {
       "title": "Nowy",
       "urlImg": "https://via.placeholder.com/600/92c952",
       "description": "Nowy Post 1234",
-      "reactionPlus": 0,
-      "reactionMinus": 0,
+      "reactionPlus": 4,
+      "reactionMinus": 1,
       "author": "tipycode",
       "id": 26
     },
@@ -238,8 +238,8 @@
       "title": "Nowy 12",
       "urlImg": "https://via.placeholder.com/600/92c952",
       "description": "lalal laalal ",
-      "reactionPlus": 0,
-      "reactionMinus": 0,
+      "reactionPlus": 2,
+      "reactionMinus": 1,
       "author": "tipycode",
       "id": 27
     }

@@ -6,6 +6,15 @@
             </div>
             <div class="onePostText">
                 <TitlePost :title="post.title" />
+                    <v-rating   
+                    background-color="purple lighten-3"
+                    color="purple"
+                    small
+                    half-increments
+                    :value="((5*((post.reactionPlus*100)/(post.reactionPlus+post.reactionMinus)))/100)"
+                    readonly
+                    ></v-rating>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia consequatur optio, laboriosam iure dignissimos ullam, dolorum excepturi nobis numquam unde ipsam esse id omnis deserunt obcaecati voluptatem iusto ratione veniam ducimus voluptatum harum incidunt itaque nihil dolor. Velit molestias numquam asperiores quae eveniet necessitatibus ipsa porro ducimus aspernatur est? Sed iusto laborum qui laudantium fugit voluptatum, animi recusandae. Facere quasi magnam magni commodi! Architecto facere quam placeat, optio, commodi repellendus veniam odit id laudantium aliquid perferendis, dolore labore? Sequi accusantium, soluta deserunt vero asperiores assumenda. Rerum soluta ipsa molestiae, voluptatum officia consequatur ducimus a. Totam omnis praesentium laborum blanditiis ad itaque explicabo officiis distinctio quis autem? Quia aspernatur aperiam consequatur blanditiis error, expedita perferendis sapiente aliquid officia rem, quisquam magni esse ipsam, est porro odit voluptatum iste! Quidem, nam repellendus expedita dolorum doloremque debitis quod, eveniet nemo modi labore, assumenda perspiciatis reiciendis similique. Quam rem, sapiente consequuntur officia repudiandae repellat eius nulla possimus natus fugiat. Ipsam quod praesentium unde ex ab, est quos itaque ad natus exercitationem eveniet ullam voluptatem explicabo libero ipsum iste nesciunt repudiandae quisquam saepe officia reprehenderit necessitatibus sunt temporibus at. Repellat perspiciatis excepturi rem, porro accusamus eveniet aliquid, fugit veritatis accusantium quibusdam tenetur, suscipit libero ratione!
                 <DescriptionPost :description="post.description"/>
             </div>
             <div>
@@ -64,7 +73,8 @@ export default {
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus consequuntur natus blanditiis nam placeat ipsum recusandae incidunt laborum, cupiditate soluta.",
                 reaction: false,
                 author: "typicode"
-                },]
+                },],
+             
         }
     },
     props: {
@@ -72,6 +82,9 @@ export default {
             type: Array,
             default: () => [],
         },
+    },
+    computed:{
+
     },
     methods: {
         addPlusReaction(post){
@@ -90,7 +103,8 @@ export default {
             this.$router.push(`post/${id}`)
             window.scrollTo(0, 0);
             console.log(this.$router)
-        }
+        },
+        
     }
 }
 
